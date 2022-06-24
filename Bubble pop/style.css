@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:linear-gradient(black, transparent),url("nightsky.jpg");
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.bubble{
+    position: absolute;
+    top:100vh;
+    width: 8rem;
+    height: 8rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: inset 0 0 1rem #fff, inset -1rem 1rem 1.5rem #0e0bc2,
+    inset .5rem .5rem 1rem #bb4597,inset -.5rem .5rem 2rem #fff,
+    inset 1.5rem -2.5rem 2rem #98e;
+}
+.bubble-one{
+    box-shadow: inset 0 0 1rem #fff, inset -1rem 1rem 1.5rem #303052,
+    inset .5rem .5rem 1rem #f8e63e,inset -.5rem .5rem 2rem #fff,
+    inset 1.5rem -2.5rem 2rem rgb(80, 70, 126);
+}
+
+.bubble-two{
+    box-shadow: inset 0 0 1rem #fff, inset -1rem 1rem 1.5rem #303052,
+    inset .5rem .5rem 1rem #578673,inset -.5rem .5rem 2rem #fff,
+    inset 1.5rem -2.5rem 2rem rgb(141, 182, 235);
+}
+.bubble-three{
+    box-shadow: inset 0 0 1rem #fff, inset -1rem 1rem 1.5rem #c964d4,
+    inset .5rem .5rem 1rem #85bec5,inset -.5rem .5rem 2rem #fff,
+    inset 1.5rem -2.5rem 2rem rgb(211, 124, 163);
+}
+.bubble-four{
+    box-shadow: inset 0 0 1rem #fff, inset -1rem 1rem 1.5rem #1818ba,
+    inset .5rem .5rem 1rem #afa336,inset -.5rem .5rem 2rem #fff,
+    inset 1.5rem -2.5rem 2rem rgb(27, 26, 33);
+}
+.bubble-five{
+    box-shadow: inset 0 0 1rem #fff, inset -1rem 1rem 1.5rem #b755a580,
+    inset .5rem .5rem 1rem #8bcba0,inset -.5rem .5rem 2rem #fff,
+    inset 1.5rem -2.5rem 2rem rgb(80, 70, 126);
+}
+.score-board{
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: inset 0 0 1rem #fff, inset -1rem 1rem 1.5rem #ff9999,
+    inset .5rem .5rem 1rem #ccccff,inset -.5rem .5rem 2rem #fff,
+    inset 1.5rem -2.5rem 2rem rgb(80, 70, 126);
+    position: absolute;
+    bottom: 0;
+    left: calc(90% + 4rem);
+    opacity: .7;
+}
+.loser{
+   display: none;
+   
+}
+.winner{
+    display: none;
+}
+.main-game{
+    height:100vh;
+    color: rgb(227, 217, 217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+button.start-btn{
+    font-size: 1.3rem;
+    border:none;
+    margin-top: .8rem;
+    border-radius: .4rem;
+    font-weight: bold;
+    height: 2rem;
+    width: 5rem;
+    margin: 8rem,auto;
+}
+.shadow{
+    width: 26rem;
+    height: 37rem;
+    left: calc(50% - 14rem);
+    background: rgba(0,0,0,0,0.6);
+    display:none ;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    text-align: left;
+    position: relative;
+}
+.total-score{
+    background: linear-gradient(45deg,#ff9999,#ccccff,#fff);
+    padding: 1rem 10rem 4rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0 2rem rgba(0,0,0,0,0.8);
+    opacity: .6;
+    height: 30;
+    width: 30;
+    border-radius: 50%;
+}
